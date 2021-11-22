@@ -17,10 +17,10 @@ J=9/2;
 [O20,O40,O44,O60,O64,Jx,Jy,Jz,Jplus,Jminus] = OperatorCuprate(J);
 
 %experimental value for the energies of Nd-LSCO
-Expenergy =        [16.0,   20.8,  26.9,  93.3];
+Expenergy =        [10.0,   20.8,  26.9,  93.3];
 UncExpenergy  =    [0.50 ,  0.10,  0.20,  0.2];
-Expscattering =    [0.05 ,  1.00,  0.86, 0.14];
-UncExpscattering = [0.02 ,  0.00,  0.05, 0.04];
+Expscattering =    [0.40 ,  1.00,  0.24, 0.041];
+UncExpscattering = [0.06 ,  0.00,  0.04, 0.004];
 %mean field switch
 %h=0;
 %compteur = 0;
@@ -30,7 +30,7 @@ bestchi = 1e99; %make sure that the first one will be lower than that.
 
 
 counter=0;
-step=1;
+step=5;
 k20=-284/0.912;
 k40=-344/(1.25e-2);
 k60=-88/(2.09e-4);
